@@ -14,12 +14,18 @@ public class HomePage extends BasePage {
     @FindBy(xpath ="//a[@class='login']")
     public WebElement signInLink;
 
+                @FindBy(xpath="//a[@class='blockbestsellers']")
+                public WebElement bestSellersLink;
+
     //method region
-    public LoginPage clickOnSignInLink(){
+    public LoginPage clickOnSignInLink() {
         clickOnElement(signInLink);
-
         return new LoginPage();
-
-
     }
+
+                public  SellersPage clickOnBestSellerLink() {
+                    clickOnElement(bestSellersLink);
+                    return new SellersPage();
+                }
+
 }

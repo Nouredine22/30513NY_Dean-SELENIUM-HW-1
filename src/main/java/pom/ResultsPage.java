@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ResultsPage extends BasePage {
-    public void ResultsPage(){
+    public  ResultsPage(){
         PageFactory.initElements(driver,this);
     }
     //webElement
